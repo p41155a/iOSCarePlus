@@ -13,7 +13,6 @@
 		FF5628AF258A2B1F00E3D0E1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FF5628AE258A2B1F00E3D0E1 /* Alamofire */; };
 		FF5628B2258A2EA700E3D0E1 /* NewGameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5628B1258A2EA700E3D0E1 /* NewGameResponse.swift */; };
 		FF5628B6258A341900E3D0E1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF5628B5258A341900E3D0E1 /* Kingfisher */; };
-		FF5628BD258AED6B00E3D0E1 /* GamePriceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5628BC258AED6B00E3D0E1 /* GamePriceResponse.swift */; };
 		FFAFC33B2579D2A20068D435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFC33A2579D2A20068D435 /* AppDelegate.swift */; };
 		FFAFC33D2579D2A20068D435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFC33C2579D2A20068D435 /* SceneDelegate.swift */; };
 		FFAFC33F2579D2A20068D435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFC33E2579D2A20068D435 /* ViewController.swift */; };
@@ -27,7 +26,6 @@
 		FF5628A7258A239700E3D0E1 /* GameItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemModel.swift; sourceTree = "<group>"; };
 		FF5628AA258A248600E3D0E1 /* GameItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemTableViewCell.swift; sourceTree = "<group>"; };
 		FF5628B1258A2EA700E3D0E1 /* NewGameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameResponse.swift; sourceTree = "<group>"; };
-		FF5628BC258AED6B00E3D0E1 /* GamePriceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePriceResponse.swift; sourceTree = "<group>"; };
 		FFAFC3372579D2A20068D435 /* iOSCarePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCarePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFAFC33A2579D2A20068D435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFAFC33C2579D2A20068D435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 				FF5628A7258A239700E3D0E1 /* GameItemModel.swift */,
 				FF5628AA258A248600E3D0E1 /* GameItemTableViewCell.swift */,
 				FF5628B1258A2EA700E3D0E1 /* NewGameResponse.swift */,
-				FF5628BC258AED6B00E3D0E1 /* GamePriceResponse.swift */,
 			);
 			path = iOSCarePlus;
 			sourceTree = "<group>";
@@ -192,7 +189,6 @@
 				FFAFC33F2579D2A20068D435 /* ViewController.swift in Sources */,
 				FFAFC33B2579D2A20068D435 /* AppDelegate.swift in Sources */,
 				FFAFC33D2579D2A20068D435 /* SceneDelegate.swift in Sources */,
-				FF5628BD258AED6B00E3D0E1 /* GamePriceResponse.swift in Sources */,
 				FF5628A8258A239700E3D0E1 /* GameItemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

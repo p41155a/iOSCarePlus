@@ -16,7 +16,7 @@ struct NewGameContent: Decodable {
     enum CodingKeys: String, CodingKey {
         case formalName = "formal_name"
         case heroBannerURL = "hero_banner_url"
-        case gameId
+        case gameId = "id"
     }
 }
 
