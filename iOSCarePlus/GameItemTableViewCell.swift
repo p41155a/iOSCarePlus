@@ -5,9 +5,9 @@
 //  Created by Yoojin Park on 2020/12/16.
 //
 
-import UIKit
-import Kingfisher
 import Alamofire
+import Kingfisher
+import UIKit
 
 class GameItemTableViewCell: UITableViewCell {
     private var model: GameItemModel? {
@@ -27,7 +27,7 @@ class GameItemTableViewCell: UITableViewCell {
     func setUIFromModel() {
         guard let model = model else { return }
         
-        let imageURL = URL(string: model.imageURL)
+        let imageURL: URL? = URL(string: model.imageURL)
         gameImageView.kf.setImage(with: imageURL)
         
         gameImageView.layer.cornerRadius = 9
@@ -35,7 +35,7 @@ class GameItemTableViewCell: UITableViewCell {
         gameImageView.layer.borderColor = UIColor(red: 236 / 255.0, green: 236 / 255.0, blue: 236 / 255.0, alpha: 1).cgColor
         
         gameTitleLabel.text = model.gameTitle
-        if let discountPrice = model.gameDiscountPrice {
+        if let discountPrice: Int = model.gameDiscountPrice {
             gameCurrentPrice.text = "\(discountPrice)"
             gameOriginPrice.text = "\(model.gameOriginPrice)"
         } else {
