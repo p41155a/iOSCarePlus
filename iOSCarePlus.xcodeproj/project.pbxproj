@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF5628A5258A1F7000E3D0E1 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5628A4258A1F7000E3D0E1 /* GameListViewController.swift */; };
+		FF5628A8258A239700E3D0E1 /* GameItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5628A7258A239700E3D0E1 /* GameItemModel.swift */; };
+		FF5628AB258A248600E3D0E1 /* GameItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5628AA258A248600E3D0E1 /* GameItemTableViewCell.swift */; };
+		FF5628AF258A2B1F00E3D0E1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FF5628AE258A2B1F00E3D0E1 /* Alamofire */; };
+		FF5628B2258A2EA700E3D0E1 /* NewGameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5628B1258A2EA700E3D0E1 /* NewGameResponse.swift */; };
+		FF5628B6258A341900E3D0E1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF5628B5258A341900E3D0E1 /* Kingfisher */; };
+		FF5628B9258A38A700E3D0E1 /* GamePriceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5628B8258A38A700E3D0E1 /* GamePriceResponse.swift */; };
 		FFAFC33B2579D2A20068D435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFC33A2579D2A20068D435 /* AppDelegate.swift */; };
 		FFAFC33D2579D2A20068D435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFC33C2579D2A20068D435 /* SceneDelegate.swift */; };
 		FFAFC33F2579D2A20068D435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFC33E2579D2A20068D435 /* ViewController.swift */; };
@@ -16,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF5628A4258A1F7000E3D0E1 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
+		FF5628A7258A239700E3D0E1 /* GameItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemModel.swift; sourceTree = "<group>"; };
+		FF5628AA258A248600E3D0E1 /* GameItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemTableViewCell.swift; sourceTree = "<group>"; };
+		FF5628B1258A2EA700E3D0E1 /* NewGameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameResponse.swift; sourceTree = "<group>"; };
+		FF5628B8258A38A700E3D0E1 /* GamePriceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePriceResponse.swift; sourceTree = "<group>"; };
 		FFAFC3372579D2A20068D435 /* iOSCarePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCarePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFAFC33A2579D2A20068D435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFAFC33C2579D2A20068D435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5628B6258A341900E3D0E1 /* Kingfisher in Frameworks */,
+				FF5628AF258A2B1F00E3D0E1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,11 @@
 				FFAFC3432579D2A30068D435 /* Assets.xcassets */,
 				FFAFC3452579D2A30068D435 /* LaunchScreen.storyboard */,
 				FFAFC3482579D2A30068D435 /* Info.plist */,
+				FF5628A4258A1F7000E3D0E1 /* GameListViewController.swift */,
+				FF5628A7258A239700E3D0E1 /* GameItemModel.swift */,
+				FF5628AA258A248600E3D0E1 /* GameItemTableViewCell.swift */,
+				FF5628B1258A2EA700E3D0E1 /* NewGameResponse.swift */,
+				FF5628B8258A38A700E3D0E1 /* GamePriceResponse.swift */,
 			);
 			path = iOSCarePlus;
 			sourceTree = "<group>";
@@ -84,6 +103,10 @@
 			dependencies = (
 			);
 			name = iOSCarePlus;
+			packageProductDependencies = (
+				FF5628AE258A2B1F00E3D0E1 /* Alamofire */,
+				FF5628B5258A341900E3D0E1 /* Kingfisher */,
+			);
 			productName = iOSCarePlus;
 			productReference = FFAFC3372579D2A20068D435 /* iOSCarePlus.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,10 @@
 				Base,
 			);
 			mainGroup = FFAFC32E2579D2A20068D435;
+			packageReferences = (
+				FF5628AD258A2B1F00E3D0E1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FF5628B4258A341900E3D0E1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = FFAFC3382579D2A20068D435 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,9 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5628AB258A248600E3D0E1 /* GameItemTableViewCell.swift in Sources */,
+				FF5628A5258A1F7000E3D0E1 /* GameListViewController.swift in Sources */,
+				FF5628B2258A2EA700E3D0E1 /* NewGameResponse.swift in Sources */,
 				FFAFC33F2579D2A20068D435 /* ViewController.swift in Sources */,
 				FFAFC33B2579D2A20068D435 /* AppDelegate.swift in Sources */,
 				FFAFC33D2579D2A20068D435 /* SceneDelegate.swift in Sources */,
+				FF5628B9258A38A700E3D0E1 /* GamePriceResponse.swift in Sources */,
+				FF5628A8258A239700E3D0E1 /* GameItemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +397,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF5628AD258A2B1F00E3D0E1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		FF5628B4258A341900E3D0E1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF5628AE258A2B1F00E3D0E1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF5628AD258A2B1F00E3D0E1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FF5628B5258A341900E3D0E1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF5628B4258A341900E3D0E1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FFAFC32F2579D2A20068D435 /* Project object */;
 }

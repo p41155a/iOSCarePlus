@@ -42,8 +42,7 @@ class ViewController: UIViewController {
                        delay: 1,
                        usingSpringWithDamping: 0.6,
                        initialSpringVelocity: 1,
-                       options: []
-        ) { [weak self] in
+                       options: []) { [weak self] in
             self?.logoViewTopConstraint.constant = 17
             self?.view.layoutIfNeeded()
             // 화면을 갱신하라고 해야 변화하기 때문에 쓰는 코드
