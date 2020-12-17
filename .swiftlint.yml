@@ -141,6 +141,9 @@ disabled_rules: #사용하지 않는 룰
     # case들문 사이에는 공백이 있어야 합니다. https://realm.github.io/SwiftLint/vertical_whitespace_between_cases.html
     - vertical_whitespace_between_cases # new
     
+    # file내부의 정렬순서를 강제합니다. protocol class 순 https://realm.github.io/SwiftLint/file_types_order.html
+    - file_types_order # new
+    
 opt_in_rules: #사용하는 룰
     # todo는 반드시 해결해야 합니다. https://realm.github.io/SwiftLint/todo.html
     - todo
@@ -267,9 +270,6 @@ opt_in_rules: #사용하는 룰
     
     # file이름엔 공백이 있으면 안됩니다. https://realm.github.io/SwiftLint/file_name_no_space.html
     - file_name_no_space # new
-    
-    # file내부의 정렬순서를 강제합니다. protocol class 순 https://realm.github.io/SwiftLint/file_types_order.html
-    - file_types_order # new
     
     # filter.first보단 .first(where:)를 사용하도록 합니다. (속도향상) https://realm.github.io/SwiftLint/first_where.html
     - first_where # new
