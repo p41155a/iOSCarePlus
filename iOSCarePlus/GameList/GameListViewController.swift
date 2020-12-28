@@ -56,10 +56,10 @@ extension GameListViewController: UITableViewDelegate {
 
 extension GameListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if isEnd {
-            return model?.contents.count ?? 0
-        }
-        return (model?.contents.count ?? -1) + 1
+        guard let model = model else { return 0 } // 응답받기전에 셀 0개보여주도록 코드 수정
+        let contentNum: Int = model.contents.count
+        
+        return isEnd ? contentNum : contentNum + 1
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

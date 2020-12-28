@@ -24,9 +24,16 @@ class GameItemCodeTableViewCell: UITableViewCell {
         contentView.addSubview(titleLabel)
         contentView.addSubview(priceLabel)
         
+        gameImageViewAutoLayout(gameImageView)
+        labelAutoLayout(titleLabel, priceLabel)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func gameImageViewAutoLayout(_ gameImageView: UIImageView) {
         gameImageView.translatesAutoresizingMaskIntoConstraints = false // 우리가 재설정하겠음
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        priceLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             gameImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
@@ -37,7 +44,12 @@ class GameItemCodeTableViewCell: UITableViewCell {
         ])
         
         gameImageView.backgroundColor = .red
-        
+    }
+    
+    func labelAutoLayout(_ titleLabel: UILabel, _ priceLabel: UILabel) {
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        priceLabel.translatesAutoresizingMaskIntoConstraints = false
+                
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: gameImageView.topAnchor, constant: 5),
             titleLabel.leadingAnchor.constraint(equalTo: gameImageView.trailingAnchor, constant: 12),
@@ -45,9 +57,5 @@ class GameItemCodeTableViewCell: UITableViewCell {
         ])
         
         titleLabel.text = "test"
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
