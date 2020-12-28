@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Game List View Controller-->
         <scene sceneID="4lY-0d-OqV">
             <objects>
                 <viewController id="L2H-Fc-Ueo" customClass="GameListViewController" customModule="iOSCarePlus" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,14 +113,46 @@
                             <constraint firstItem="rgR-5R-BCM" firstAttribute="trailing" secondItem="pdG-Tf-QKJ" secondAttribute="trailing" id="dnn-bS-ucF"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Xlk-to-MgZ"/>
+                    <tabBarItem key="tabBarItem" title="" image="gameIcon" id="Xlk-to-MgZ"/>
                     <connections>
                         <outlet property="tableView" destination="pdG-Tf-QKJ" id="gqT-1W-VDW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q5b-um-kJ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-152.17391304347828" y="460.71428571428567"/>
+            <point key="canvasLocation" x="-1354" y="1083"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BI0-we-Id8">
+            <objects>
+                <viewController id="FSJ-4g-ZeI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qBI-jf-wbs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="z5E-vO-igr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="shopIcon" id="tbC-Qo-jVA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O4P-Qs-NYa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="1083"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jTm-uG-zJi">
+            <objects>
+                <viewController id="ZX5-z5-Yu5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="30v-EU-p17">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nEP-07-mWZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="heartIcon" id="Hc6-O9-Dn9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NIO-R9-Tkc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-686" y="1083"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4pN-Nw-l6E">
@@ -134,13 +166,15 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="cov-bu-9ga"/>
                         <segue destination="L2H-Fc-Ueo" kind="relationship" relationship="viewControllers" id="c2o-cM-lmB"/>
+                        <segue destination="ZX5-z5-Yu5" kind="relationship" relationship="viewControllers" id="auE-eO-Rg0"/>
+                        <segue destination="FSJ-4g-ZeI" kind="relationship" relationship="viewControllers" id="V3s-vV-y9d"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2L-nd-Dbj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1042" y="405"/>
         </scene>
-        <!--Home-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSCarePlus" customModuleProvider="target" sceneMemberID="viewController">
@@ -180,7 +214,7 @@
                             <constraint firstAttribute="bottom" secondItem="Nea-CP-Oop" secondAttribute="bottom" id="pMd-Hh-sNI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="E4W-fs-abf"/>
+                    <tabBarItem key="tabBarItem" title="" image="homeIcon" id="E4W-fs-abf"/>
                     <connections>
                         <outlet property="backgroundImageViewLeadingConstraint" destination="fjg-B3-xgD" id="Lvp-fq-Utj"/>
                         <outlet property="logoView" destination="LLd-RP-pU5" id="HHg-WM-fPj"/>
@@ -189,12 +223,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-152" y="-240"/>
+            <point key="canvasLocation" x="-2012" y="1083"/>
         </scene>
     </scenes>
     <resources>
+        <image name="gameIcon" width="55" height="55"/>
+        <image name="heartIcon" width="55" height="55"/>
         <image name="homeBackground" width="2071" height="812"/>
-        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="homeIcon" width="55" height="55"/>
+        <image name="shopIcon" width="55" height="55"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
