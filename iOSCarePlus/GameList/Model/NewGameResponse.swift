@@ -8,10 +8,10 @@
 import Foundation
 
 struct NewGameResponse: Decodable {
-    let contents: [NewGameContent]
-    let offset: Int
-    let length: Int
-    let total: Int
+    var contents: [NewGameContent]
+    var offset: Int
+    var length: Int
+    var total: Int
 }
 
 struct NewGameContent: Decodable {
