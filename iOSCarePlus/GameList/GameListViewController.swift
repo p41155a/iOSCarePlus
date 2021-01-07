@@ -10,9 +10,33 @@ import UIKit
 
 class GameListViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var newButton: SelectableButton!
+    @IBOutlet private weak var saleButton: SelectableButton!
+    @IBOutlet weak var selectedLineCenterConstraints: NSLayoutConstraint!
+    
+    @IBAction private func newButtonTouchUp(_ sender: Any) {
+        newButton.isSelected = true
+        saleButton.isSelected = false
+        
+        UIView.animate(withDuration: 0.1) {[weak self] in
+            self?.selectedLineCenterConstraints.constant = 0
+            self?.view.layoutIfNeeded()
+        }
+    }
+    @IBAction private func saleButtonTouchUp(_ sender: Any) {
+        newButton.isSelected = false
+        saleButton.isSelected = true
+        let constant = saleButton.center.x - newButton.center.x
+        UIView.animate(withDuration: 0.1) {[weak self] in
+            self?.selectedLineCenterConstraints.constant = constant
+            self?.view.layoutIfNeeded()
+        }
+    }
+    
     private var getNewGameListURL: String {
         "https://ec.nintendo.com/api/KR/ko/search/new?count=\(newCount)&offset=\(newOffset)"
     }
+    
     private var newCount: Int = 10
     private var newOffset: Int = 0
     private var isEnd: Bool = false

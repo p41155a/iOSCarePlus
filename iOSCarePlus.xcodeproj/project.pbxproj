@@ -15,6 +15,9 @@
 		FF5628B2258A2EA700E3D0E1 /* NewGameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5628B1258A2EA700E3D0E1 /* NewGameResponse.swift */; };
 		FF5B0F9025935D24009528BD /* GameItemCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B0F8F25935D24009528BD /* GameItemCodeTableViewCell.swift */; };
 		FF5B0F9F25937311009528BD /* IndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B0F9E25937311009528BD /* IndicatorCell.swift */; };
+		FFAAF74625A5D5E6008A5AA3 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAAF74525A5D5E6008A5AA3 /* Navigation.storyboard */; };
+		FFAAF74925A5DFAC008A5AA3 /* SelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAAF74825A5DFAC008A5AA3 /* SelectableButton.swift */; };
+		FFAAF74C25A5DFFE008A5AA3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFAAF74B25A5DFFE008A5AA3 /* Colors.xcassets */; };
 		FFAFC33B2579D2A20068D435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFC33A2579D2A20068D435 /* AppDelegate.swift */; };
 		FFAFC33D2579D2A20068D435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFC33C2579D2A20068D435 /* SceneDelegate.swift */; };
 		FFAFC33F2579D2A20068D435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFC33E2579D2A20068D435 /* ViewController.swift */; };
@@ -33,6 +36,9 @@
 		FF5628B1258A2EA700E3D0E1 /* NewGameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameResponse.swift; sourceTree = "<group>"; };
 		FF5B0F8F25935D24009528BD /* GameItemCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemCodeTableViewCell.swift; sourceTree = "<group>"; };
 		FF5B0F9E25937311009528BD /* IndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorCell.swift; sourceTree = "<group>"; };
+		FFAAF74525A5D5E6008A5AA3 /* Navigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
+		FFAAF74825A5DFAC008A5AA3 /* SelectableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButton.swift; sourceTree = "<group>"; };
+		FFAAF74B25A5DFFE008A5AA3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FFAFC3372579D2A20068D435 /* iOSCarePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCarePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFAFC33A2579D2A20068D435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFAFC33C2579D2A20068D435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 				FF5628A4258A1F7000E3D0E1 /* GameListViewController.swift */,
 				FF5B0F9425935D88009528BD /* Model */,
 				FF5B0F9525935D9E009528BD /* Cell */,
+				FFAAF74825A5DFAC008A5AA3 /* SelectableButton.swift */,
 			);
 			path = GameList;
 			sourceTree = "<group>";
@@ -131,6 +138,8 @@
 				FFAFC3452579D2A30068D435 /* LaunchScreen.storyboard */,
 				FFAFC3482579D2A30068D435 /* Info.plist */,
 				FF5B0F9225935D62009528BD /* GameList */,
+				FFAAF74525A5D5E6008A5AA3 /* Navigation.storyboard */,
+				FFAAF74B25A5DFFE008A5AA3 /* Colors.xcassets */,
 			);
 			path = iOSCarePlus;
 			sourceTree = "<group>";
@@ -201,6 +210,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAAF74C25A5DFFE008A5AA3 /* Colors.xcassets in Resources */,
+				FFAAF74625A5D5E6008A5AA3 /* Navigation.storyboard in Resources */,
 				FFAFC3472579D2A30068D435 /* LaunchScreen.storyboard in Resources */,
 				FFAFC3442579D2A30068D435 /* Assets.xcassets in Resources */,
 				FFAFC3422579D2A20068D435 /* Main.storyboard in Resources */,
@@ -277,6 +288,7 @@
 				FF5628AB258A248600E3D0E1 /* GameItemTableViewCell.swift in Sources */,
 				FF5B0F9F25937311009528BD /* IndicatorCell.swift in Sources */,
 				FF5B0F9025935D24009528BD /* GameItemCodeTableViewCell.swift in Sources */,
+				FFAAF74925A5DFAC008A5AA3 /* SelectableButton.swift in Sources */,
 				FF5628A5258A1F7000E3D0E1 /* GameListViewController.swift in Sources */,
 				FF5628B2258A2EA700E3D0E1 /* NewGameResponse.swift in Sources */,
 				FFAFC33F2579D2A20068D435 /* ViewController.swift in Sources */,

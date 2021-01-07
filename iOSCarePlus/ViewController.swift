@@ -12,6 +12,10 @@ class ViewController: UIViewController {
     @IBOutlet private weak var logoViewTopConstraint: NSLayoutConstraint!
     @IBOutlet private weak var backgroundImageViewLeadingConstraint: NSLayoutConstraint!
     
+    @IBAction func logoTapAction(_ sender: Any) {
+        blinkLogoAnimation()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +30,6 @@ class ViewController: UIViewController {
         
         apperLogoViewAnimation { [weak self] in
             self?.slideBackgroundImageAnimation()
-            self?.blinkLogoAnimation()
         }
     }
     
@@ -60,10 +63,10 @@ class ViewController: UIViewController {
     }
     
     private func blinkLogoAnimation() {
-        UIView.animate(withDuration: 1, delay: 0, options: [.repeat, .autoreverse]) { [weak self] in
+        UIView.animate(withDuration: 1, delay: 0, options: [.autoreverse]) { [weak self] in
             // 히든을 하면 안되는 이유: 1과 0으로 이루어져 있어서 서서히 애니메이션이 안됨
             self?.logoView.alpha = 0
-        }
+        } // 애니메이션을 쓰면 복사된 뷰가 보이는 것이다. -> 따라서 애니메이션이 작동 되고 있는 도중에는 클릭 같은 것이 먹지 않는 것을 볼 수 있다.
     }
 }
 
