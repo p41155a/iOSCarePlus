@@ -48,7 +48,7 @@ git rm -r --cached [파일명]
 
 * `New Run Script Phases` 클릭하여 아래의 코드 추가
 
-```
+```swift
 if which swiftlint >/dev/null; then
     swiftlint
 else
@@ -63,6 +63,50 @@ fi
 ### references
 
 * https://github.com/realm/SwiftLint
+
+
+
+## 🍏 SwiftGen
+
+* 이 프로젝트에서 적용할지 모르겠지만 제가 자주 사용하는 라이브러리를 정리하겠습니다.
+* SwiftGen: 문자열을 사용할 때 생길 수 있는 오타 위험을 피할 수 있고, asset을 사용할 때 존재하지 않는 asset 이름을 적는 위험을 피할 수 있음
+
+
+
+### SwiftGen 적용하기
+
+* cocoapod에 `pod 'SwiftGen', '~> 6.0'`를 추가후 설치
+* `New Run Script Phases` 클릭하여 아래의 코드 추가
+
+```swift
+if [[ -f "${PODS_ROOT}/SwiftGen/bin/swiftgen" ]]; then
+  "${PODS_ROOT}/SwiftGen/bin/swiftgen" xcassets "${SRCROOT}/${TARGETNAME}/Resource/Assets.xcassets" -t swift4 -o "${SRCROOT}/${TARGETNAME}/Resource/SwiftGen/Asset.swift"
+else
+  echo "warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it."
+fi
+```
+
+Resource 디렉토리의 Assets라는 이름의 xcassets라는 파일을 asset.swift라는로 만들겠다라는 뜻입니다.
+
+`homebrew`로 설치 했다면
+
+```
+swiftgen xcassets "${SRCROOT}/${TARGETNAME}/Resource/Assets.xcassets" -t swift4 -o "${SRCROOT}/${TARGETNAME}/Resource/SwiftGen/Asset.swift"
+```
+
+이렇게 하면 되고 
+
+```
+swiftgen xcassets --param enumName=Colors "${SRCROOT}/${TARGETNAME}/Resource/Assets.xcassets" -t swift4 -o "${SRCROOT}/${TARGETNAME}/Resource/SwiftGen/Asset.swift"
+```
+
+로 enum이름을 지정할 수 도 있습니다.
+
+
+
+### references
+
+- https://github.com/SwiftGen/SwiftGen
 
 
 
