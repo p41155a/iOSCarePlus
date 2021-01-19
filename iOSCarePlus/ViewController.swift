@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var logoViewTopConstraint: NSLayoutConstraint!
     @IBOutlet private weak var backgroundImageViewLeadingConstraint: NSLayoutConstraint!
     
-    @IBAction func logoTapAction(_ sender: Any) {
+    @IBAction private func logoTapAction(_ sender: Any) {
         blinkLogoAnimation()
     }
     
