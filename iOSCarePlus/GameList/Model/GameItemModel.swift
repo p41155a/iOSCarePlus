@@ -11,7 +11,7 @@ struct GameItemModel {
     let gameTitle: String
     let gameOriginPrice: Int
     let gameDiscountPrice: Int?
-    let screenshots: [NewGameScreenshots]?
+    let screenshots: [Screenshots]?
 //    let id: Int
     
     let imageURL: String

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A10976457C3E9001D48B3784 /* Pods_iOSCarePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACA500B6C6F8B3EE82BDDAA /* Pods_iOSCarePlus.framework */; };
+		FF0D56AD25B83C7300C7B7A7 /* GameDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D56AC25B83C7300C7B7A7 /* GameDetailPageViewController.swift */; };
+		FF0D56B125B83C9700C7B7A7 /* GameDetailImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D56B025B83C9700C7B7A7 /* GameDetailImageViewController.swift */; };
+		FF0D56B425B84D3600C7B7A7 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D56B325B84D3600C7B7A7 /* GameDetailViewController.swift */; };
 		FF2BE70625B5608B00D267C8 /* CommonEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BE70525B5608B00D267C8 /* CommonEnums.swift */; };
 		FF5628A5258A1F7000E3D0E1 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5628A4258A1F7000E3D0E1 /* GameListViewController.swift */; };
 		FF5628A8258A239700E3D0E1 /* GameItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5628A7258A239700E3D0E1 /* GameItemModel.swift */; };
@@ -31,6 +34,9 @@
 		764F0C05EF49B8C18B405583 /* Pods-iOSCarePlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCarePlus.debug.xcconfig"; path = "Target Support Files/Pods-iOSCarePlus/Pods-iOSCarePlus.debug.xcconfig"; sourceTree = "<group>"; };
 		992606C2CCB7832399844B22 /* Pods-iOSCarePlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCarePlus.release.xcconfig"; path = "Target Support Files/Pods-iOSCarePlus/Pods-iOSCarePlus.release.xcconfig"; sourceTree = "<group>"; };
 		CACA500B6C6F8B3EE82BDDAA /* Pods_iOSCarePlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSCarePlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0D56AC25B83C7300C7B7A7 /* GameDetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailPageViewController.swift; sourceTree = "<group>"; };
+		FF0D56B025B83C9700C7B7A7 /* GameDetailImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailImageViewController.swift; sourceTree = "<group>"; };
+		FF0D56B325B84D3600C7B7A7 /* GameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
 		FF2BE70525B5608B00D267C8 /* CommonEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnums.swift; sourceTree = "<group>"; };
 		FF5628A4258A1F7000E3D0E1 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
 		FF5628A7258A239700E3D0E1 /* GameItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemModel.swift; sourceTree = "<group>"; };
@@ -79,6 +85,16 @@
 				992606C2CCB7832399844B22 /* Pods-iOSCarePlus.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF0D56AB25B83C3200C7B7A7 /* GameDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FF0D56B325B84D3600C7B7A7 /* GameDetailViewController.swift */,
+				FF0D56AC25B83C7300C7B7A7 /* GameDetailPageViewController.swift */,
+				FF0D56B025B83C9700C7B7A7 /* GameDetailImageViewController.swift */,
+			);
+			path = GameDetail;
 			sourceTree = "<group>";
 		};
 		FF2BE70425B5605C00D267C8 /* Enum */ = {
@@ -149,6 +165,7 @@
 				FFAFC3452579D2A30068D435 /* LaunchScreen.storyboard */,
 				FFAFC3482579D2A30068D435 /* Info.plist */,
 				FF5B0F9225935D62009528BD /* GameList */,
+				FF0D56AB25B83C3200C7B7A7 /* GameDetail */,
 				FFAAF74525A5D5E6008A5AA3 /* Navigation.storyboard */,
 				FFAAF74B25A5DFFE008A5AA3 /* Colors.xcassets */,
 			);
@@ -298,11 +315,14 @@
 			files = (
 				FF5628AB258A248600E3D0E1 /* GameItemTableViewCell.swift in Sources */,
 				FF5B0F9F25937311009528BD /* IndicatorCell.swift in Sources */,
+				FF0D56AD25B83C7300C7B7A7 /* GameDetailPageViewController.swift in Sources */,
 				FF5B0F9025935D24009528BD /* GameItemCodeTableViewCell.swift in Sources */,
 				FFAAF74925A5DFAC008A5AA3 /* SelectableButton.swift in Sources */,
 				FF5628A5258A1F7000E3D0E1 /* GameListViewController.swift in Sources */,
 				FF5628B2258A2EA700E3D0E1 /* NewGameResponse.swift in Sources */,
+				FF0D56B425B84D3600C7B7A7 /* GameDetailViewController.swift in Sources */,
 				FFAFC33F2579D2A20068D435 /* ViewController.swift in Sources */,
+				FF0D56B125B83C9700C7B7A7 /* GameDetailImageViewController.swift in Sources */,
 				FF2BE70625B5608B00D267C8 /* CommonEnums.swift in Sources */,
 				FFAFC33B2579D2A20068D435 /* AppDelegate.swift in Sources */,
 				FFAFC33D2579D2A20068D435 /* SceneDelegate.swift in Sources */,

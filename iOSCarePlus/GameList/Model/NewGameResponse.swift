@@ -18,7 +18,7 @@ struct NewGameContent: Decodable {
     let formalName: String
     let heroBannerURL: String
     let gameId: Int
-    let screenshots: [NewGameScreenshots]?
+    let screenshots: [Screenshots]?
     
     enum CodingKeys: String, CodingKey {
         case formalName = "formal_name"
@@ -28,11 +28,11 @@ struct NewGameContent: Decodable {
     }
 }
 
-struct NewGameScreenshots: Decodable {
-    let images: [NewGameURL]
+struct Screenshots: Decodable {
+    let images: [Images]
 }
 
-struct NewGameURL: Decodable {
+struct Images: Decodable {
     let url: String
 }
 

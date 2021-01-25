@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pdG-Tf-QKJ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="wKb-1q-o7l">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="443"/>
@@ -181,7 +181,7 @@
                             <constraint firstItem="rgR-5R-BCM" firstAttribute="trailing" secondItem="pdG-Tf-QKJ" secondAttribute="trailing" id="dnn-bS-ucF"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="gameIcon" id="Xlk-to-MgZ"/>
+                    <navigationItem key="navigationItem" id="vOx-ty-1RP"/>
                     <connections>
                         <outlet property="newButton" destination="2fS-DO-exn" id="wUN-Fq-FKr"/>
                         <outlet property="saleButton" destination="55y-JY-Kk7" id="7GU-Pm-caz"/>
@@ -191,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q5b-um-kJ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1355.072463768116" y="1082.8125"/>
+            <point key="canvasLocation" x="-509" y="1841"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BI0-we-Id8">
@@ -208,6 +208,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4P-Qs-NYa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-41" y="1083"/>
+        </scene>
+        <!--Game Detail View Controller-->
+        <scene sceneID="ZaW-89-PR5">
+            <objects>
+                <viewController storyboardIdentifier="GameDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yae-zJ-ZHb" customClass="GameDetailViewController" customModule="iOSCarePlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9be-aD-65o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtP-5G-LCD" customClass="GameDeta">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UY9-pf-MDq">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="UY9-pf-MDq" secondAttribute="height" id="wYj-SF-k9B"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="iZi-x4-PlX" kind="embed" id="QDn-6m-4hs"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="UY9-pf-MDq" firstAttribute="leading" secondItem="VtP-5G-LCD" secondAttribute="leading" id="H68-vR-ntt"/>
+                                    <constraint firstAttribute="trailing" secondItem="UY9-pf-MDq" secondAttribute="trailing" id="Leo-VK-YhU"/>
+                                    <constraint firstItem="UY9-pf-MDq" firstAttribute="top" secondItem="VtP-5G-LCD" secondAttribute="top" id="j9c-cR-GfM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gN6-HD-jRE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gN6-HD-jRE" firstAttribute="trailing" secondItem="VtP-5G-LCD" secondAttribute="trailing" id="R1i-1l-8g8"/>
+                            <constraint firstItem="VtP-5G-LCD" firstAttribute="leading" secondItem="gN6-HD-jRE" secondAttribute="leading" id="sBf-TM-aa9"/>
+                            <constraint firstItem="gN6-HD-jRE" firstAttribute="bottom" secondItem="VtP-5G-LCD" secondAttribute="bottom" id="xO4-nJ-ARF"/>
+                            <constraint firstItem="VtP-5G-LCD" firstAttribute="top" secondItem="gN6-HD-jRE" secondAttribute="top" id="zDe-5x-aE3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerViewController" destination="UY9-pf-MDq" id="TYE-tA-6yh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0n-o0-TYS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="1841"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jTm-uG-zJi">
@@ -235,6 +281,43 @@
             </objects>
             <point key="canvasLocation" x="-456" y="385"/>
         </scene>
+        <!--Game Detail Page View Controller-->
+        <scene sceneID="6Ac-qP-oue">
+            <objects>
+                <pageViewController storyboardIdentifier="GameDetailPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="iZi-x4-PlX" customClass="GameDetailPageViewController" customModule="iOSCarePlus" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJH-74-y0B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1032" y="1841"/>
+        </scene>
+        <!--Game Detail Image View Controller-->
+        <scene sceneID="qst-QX-Uj7">
+            <objects>
+                <viewController storyboardIdentifier="GameDetailImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PSu-va-hkq" customClass="GameDetailImageViewController" customModule="iOSCarePlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Wl-rD-BZd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wGg-7y-0Fd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wib-Fd-vLs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wib-Fd-vLs" firstAttribute="trailing" secondItem="wGg-7y-0Fd" secondAttribute="trailing" id="0bk-Qt-2ew"/>
+                            <constraint firstItem="wGg-7y-0Fd" firstAttribute="top" secondItem="Wib-Fd-vLs" secondAttribute="top" id="1En-8L-4BQ"/>
+                            <constraint firstItem="Wib-Fd-vLs" firstAttribute="bottom" secondItem="wGg-7y-0Fd" secondAttribute="bottom" id="bOT-x8-Qy2"/>
+                            <constraint firstItem="wGg-7y-0Fd" firstAttribute="leading" secondItem="Wib-Fd-vLs" secondAttribute="leading" id="tzB-mG-Q4L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="wGg-7y-0Fd" id="0cT-OY-3Vv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZW-ps-6bk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="1841"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4pN-Nw-l6E">
             <objects>
@@ -246,7 +329,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="cov-bu-9ga"/>
-                        <segue destination="L2H-Fc-Ueo" kind="relationship" relationship="viewControllers" id="c2o-cM-lmB"/>
+                        <segue destination="ABP-Ox-FOb" kind="relationship" relationship="viewControllers" id="c2o-cM-lmB"/>
                         <segue destination="ZX5-z5-Yu5" kind="relationship" relationship="viewControllers" id="auE-eO-Rg0"/>
                         <segue destination="FSJ-4g-ZeI" kind="relationship" relationship="viewControllers" id="V3s-vV-y9d"/>
                         <segue destination="qTF-bX-gfZ" kind="relationship" relationship="viewControllers" id="Qkp-uI-Z73"/>
@@ -315,6 +398,25 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-2013.0434782608697" y="1082.8125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fxr-ij-qo7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ABP-Ox-FOb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="gameIcon" id="Xlk-to-MgZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IdZ-qt-Vim">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="L2H-Fc-Ueo" kind="relationship" relationship="rootViewController" id="Evm-s5-K0p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lru-jK-QcM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1242" y="1839"/>
         </scene>
     </scenes>
     <resources>
