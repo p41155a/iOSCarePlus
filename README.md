@@ -94,7 +94,7 @@ fi
 
 ```swift
 if [[ -f "${PODS_ROOT}/SwiftGen/bin/swiftgen" ]]; then
-  "${PODS_ROOT}/SwiftGen/bin/swiftgen" xcassets "${SRCROOT}/${TARGETNAME}/Resource/Assets.xcassets" -t swift4 -o "${SRCROOT}/${TARGETNAME}/Resource/SwiftGen/Asset.swift"
+   swiftgen xcassets "${SRCROOT}/${TARGETNAME}/Resource/Assets.xcassets" -t swift4 -o "${SRCROOT}/${TARGETNAME}/Resource/SwiftGen/Asset.swift"
 else
   echo "warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it."
 fi
