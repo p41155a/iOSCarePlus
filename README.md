@@ -118,6 +118,8 @@ swiftgen xcassets --param enumName=Colors "${SRCROOT}/${TARGETNAME}/Resource/Ass
 
 로 enum이름을 지정할 수 도 있습니다.
 
+- 그 후 build하면 xcode에는 없고 파일에만 생깁니다. 드래그 드롭으로 xcode에 파일을 추가시켜 주세요.
+
 
 
 ### references
